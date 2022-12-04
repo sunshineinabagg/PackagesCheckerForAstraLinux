@@ -26,8 +26,7 @@ if __name__ == "__main__":
             if required_package in installed_package:
                 report[required_package] = True
 
-    report_data = '\n'.join([package + ': ' + str(report[package]) for package in report]).replace('True', 'SUCCESS').replace('False', 'FAILED')
+    report_data = '\n'.join([f'{pkg} - {"SUCCESS" if report[pkg] else "FAILED"}' for pkg in report])
     print(report_data)
 
     rm = subprocess.run('rm installed-packages.txt', shell=True)
-
