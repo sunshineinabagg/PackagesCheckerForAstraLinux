@@ -30,4 +30,3 @@ if __name__ == "__main__":
     print(report_data)
 
     rm = subprocess.run('rm installed-packages.txt', shell=True)
-
