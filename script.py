@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 import argparse
-=======
->>>>>>> d680158dbc2ccaab0dfc72cf4f290d732b0dda2e
 import subprocess
 
 if __name__ == "__main__":
 
-<<<<<<< HEAD
     required_packages = ('fly-admin-dhcp', 'isc-dhcp-server')
 
     parser = argparse.ArgumentParser()
@@ -34,7 +30,4 @@ if __name__ == "__main__":
     print(report_data)
 
     rm = subprocess.run('rm installed-packages.txt', shell=True)
-=======
-finally:
-    rm = subprocess.run('rm logfile.txt', shell=True)
->>>>>>> d680158dbc2ccaab0dfc72cf4f290d732b0dda2e
+
