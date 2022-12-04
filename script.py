@@ -1,5 +1,3 @@
-# fly-admin-dhcp и isc-dhcp-server
-
 import subprocess
 
 try:
